@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>無料相談のご予約・お問い合わせ｜ON HEALTHCARE OFFICE</title>
+  <meta name="description" content="ON HEALTHCARE OFFICEへの無料相談のご予約・お問い合わせはこちら。初回30分無料、オンライン対応、内容が曖昧でもOK。無理な営業は一切いたしません。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/contact.html">
+
+  <meta property="og:title" content="無料相談のご予約・お問い合わせ｜ON HEALTHCARE OFFICE">
+  <meta property="og:description" content="初回30分無料相談のご予約はこちらから。内容が曖昧でも大丈夫。無理な営業は一切いたしません。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="ON HEALTHCARE OFFICE">
+  <meta property="og:url" content="https://example.com/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-inner container">
+      <a href="./index.html" class="site-logo">
+        <img src="./images/logo.png?v=2" alt="ON HEALTHCARE OFFICE" class="logo-img">
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="./about.html" class="nav-link">プロフィール</a></li>
+          <li><a href="./services.html" class="nav-link">サービス</a></li>
+          <li><a href="./flow.html" class="nav-link">ご相談の流れ・FAQ</a></li>
+          <li><a href="./contact.html" class="nav-link">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <a href="./contact.html" class="header-cta-btn">無料相談を予約</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero-label"><i class="fas fa-mug-hot"></i> Contact</p>
+        <h1 class="page-hero-title">無料相談のご予約・お問い合わせ</h1>
+        <p class="page-hero-lead">「ちょっと聞いてみたい」だけでも大丈夫です。まずはお気軽にご連絡ください。</p>
+      </div>
+    </div>
+
+    <!-- ========== Contact Section ========== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <!-- Intro + badges -->
+        <div class="contact-intro">
+          <ul class="contact-features">
+            <li class="contact-feature-badge"><i class="fas fa-circle-check"></i> 初回30分無料</li>
+            <li class="contact-feature-badge"><i class="fas fa-circle-check"></i> オンライン対応（Zoom等）</li>
+            <li class="contact-feature-badge"><i class="fas fa-circle-check"></i> 内容が曖昧でもOK</li>
+            <li class="contact-feature-badge"><i class="fas fa-circle-check"></i> 無理な営業は一切なし</li>
+          </ul>
+          <p class="contact-intro-note">
+            下記フォームにご入力のうえ送信してください。<br>
+            2〜3営業日以内にご返信いたします。
+          </p>
+        </div>
+
+        <!-- Form wrap -->
+        <div class="contact-form-wrap">
+
+          <!--
+            =====================================================================
+            GOOGLE FORMS 接続手順
+            =====================================================================
+
+            【STEP 1】Google Forms でフォームを作成
+              https://docs.google.com/forms/
+
+            【STEP 2】form の action URL を取得
+              フォームプレビュー URL の末尾 "viewform" を "formResponse" に変更
+              例: https://docs.google.com/forms/d/e/1FAIpQLSXXXXXXXX/formResponse
+              → 下記 <form action="ここに貼る"> に設定
+
+            【STEP 3】各フィールドの entry ID を取得
+              フォームプレビューページ → 右クリック「ページのソースを表示」
+              → "entry." で検索 → 各テキストボックスに対応する entry.XXXXXXXXXX を確認
+              → 下記の name="entry.XXXXXXXXXX" プレースホルダーを置き換える
+
+            =====================================================================
+          -->
+
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="https://docs.google.com/forms/d/e/FORM_ID_HERE/formResponse"
+            method="POST"
+            target="hidden-iframe"
+            novalidate>
+
+            <div class="form-group">
+              <label for="field-name">
+                お名前 <span class="form-required">*</span>
+              </label>
+              <input
+                type="text"
+                id="field-name"
+                name="entry.XXXXXXXXXX"
+                required
+                autocomplete="name"
+                placeholder="山田 太郎">
+            </div>
+
+            <div class="form-group">
+              <label for="field-company">
+                会社名・組織名 <span class="form-optional">（任意）</span>
+              </label>
+              <input
+                type="text"
+                id="field-company"
+                name="entry.XXXXXXXXXX"
+                autocomplete="organization"
+                placeholder="〇〇株式会社">
+            </div>
+
+            <div class="form-group">
+              <label for="field-email">
+                メールアドレス <span class="form-required">*</span>
+              </label>
+              <input
+                type="email"
+                id="field-email"
+                name="entry.XXXXXXXXXX"
+                required
+                autocomplete="email"
+                placeholder="your@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="field-message">
+                ご相談内容 <span class="form-required">*</span>
+              </label>
+              <textarea
+                id="field-message"
+                name="entry.XXXXXXXXXX"
+                required
+                rows="6"
+                placeholder="お困りのことや気になっていること、どんな些細なことでもお書きください。「何が課題か分からない」という段階でも大丈夫です。"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                <i class="fas fa-paper-plane"></i> 送信する
+              </button>
+              <p class="form-privacy">
+                <i class="fas fa-lock"></i>
+                いただいた情報は、ご相談への対応以外の目的には使用いたしません。
+              </p>
+            </div>
+
+          </form>
+
+          <!-- 送信後の成功メッセージ（非表示→JS で表示） -->
+          <div class="form-success" id="formSuccess" aria-live="polite">
+            <i class="fas fa-circle-check"></i>
+            <h3>送信が完了しました</h3>
+            <p>お問い合わせありがとうございます。<br>内容を確認のうえ、2〜3営業日以内にご連絡いたします。</p>
+            <a href="./index.html" class="btn btn-secondary" style="margin-top: 1.5rem;">
+              <i class="fas fa-home"></i> トップページへ戻る
+            </a>
+          </div>
+
+          <!-- メール直接連絡の代替手段 -->
+          <div class="contact-alt">
+            <p>フォームでのご送信が難しい場合は、メールでも承っています。</p>
+            <a href="mailto:on.info.oc@gmail.com">
+              <i class="fas fa-envelope"></i> on.info.oc@gmail.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 送信先となる非表示 iframe -->
+    <iframe name="hidden-iframe" title="form-target" aria-hidden="true" style="display:none;"></iframe>
+
+    <!-- ========== Sub-CTA ========== -->
+    <section class="section sub-cta" id="sub-cta">
+      <div class="container">
+        <div class="sub-cta-grid">
+          <div class="sub-cta-card">
+            <i class="fas fa-pen-nib"></i>
+            <h3>まずは記事を読んでみたい方へ</h3>
+            <p>noteで産業保健や予防医療について発信しています。お問い合わせ前に、考え方や人となりを知りたい方はぜひ。</p>
+            <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">noteを読む <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="sub-cta-card">
+            <i class="fab fa-x-twitter"></i>
+            <h3>日常の発信をフォローしたい方へ</h3>
+            <p>X（旧Twitter）で労働衛生・産業保健のトピックスを発信中。気軽につながっていただけると嬉しいです。</p>
+            <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Xをフォロー <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="./index.html" class="footer-logo">
+            <img src="./images/logo.png?v=2" alt="ON HEALTHCARE OFFICE" class="footer-logo-img">
+          </a>
+          <p class="footer-description">
+            ON HEALTHCARE OFFICE — Safety &amp; Health<br>
+            産業保健・労働衛生・予防医療の専門家。<br>
+            職場の健康課題を、現場目線で一緒に考えます。
+          </p>
+        </div>
+        <div class="footer-nav">
+          <h4>サイトマップ</h4>
+          <ul>
+            <li><a href="./about.html">プロフィール</a></li>
+            <li><a href="./services.html">サービス</a></li>
+            <li><a href="./flow.html">ご相談の流れ</a></li>
+            <li><a href="./flow.html#faq">よくある質問</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>お問い合わせ</h4>
+          <p>
+            <a href="mailto:on.info.oc@gmail.com"><i class="fas fa-envelope"></i> on.info.oc@gmail.com</a>
+          </p>
+          <div class="footer-social">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="note"><i class="fas fa-pen-nib"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ON HEALTHCARE OFFICE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
